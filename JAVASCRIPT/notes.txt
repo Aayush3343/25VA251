@@ -1,0 +1,7 @@
+java script is a cross platrom object with scripting language for 
+1.)loosely typed language(variable no need to define).
+2.)interpreted as just in time compilation(runtime) rather than compile time.
+3.)can be embedded in html,commonly used to add functionality in web page.
+4.)high level and multi-paradigim.
+js features
+•extended functionality of web page.
