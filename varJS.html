@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Experiment</title>
+  </head>
+
+  <body>
+    <h2>Java Script</h2>
+
+    <script>
+//
+//
+//
+
+
+var myname="Aayush";
+console.log(myname);
+console.log(typeof(myname));
+
+//number
+var myMob=2503201000020;
+console.log(myname + "mobile number is" +myMob);
+
+//boolean
+var ismarried=false;
+console.log(myname + "is married ? " +ismarried);
+
+//undefined
+var myEmail;
+console.log(myEmail);
+console.log(typeof(myEmail));
+
+//null
+var myadress=null;
+console.log(myadress);
+console.log(typeof(myadress));
+
+//Bigint
+var myVal=BigInt(123456789012345678901234567890);
+console.log(myVal);
+console.log(typeof(myVal));
+
+//symbol
+
+var name1=Symbol("Aayush");
+var name2=Symbol("Aayush");
+console.log(name1==name2);
+
+//Refrence(object) typed=mutuable in memory and keeps valued in pair
+//object,function,array
+
+//objects are defined in pair of key and its value
+
+let myInfo={
+    name:"Aayush" ,
+     age:20 , 
+     ismarried:false ,
+      mob:9968888400,add:null,
+      branch:"CSE",
+      section:23
+};
+console.log(myInfo);
+console.log(myInfo.name);// access object's key i.e. name)
+console.log(typeof(myInfo.name));//
+
+// function - block of code that performs particular task and can be reused
+function cal(){
+    var num1=45;
+    var num2=40;
+    var res=num1+num2;
+    console.log("Addition of two numbes is" +res);
+    console.log(typeof(cal));
+}
+cal();
+
+//Array  - Collection of any data type in JS
+
+let studentlist=["Vikas","Aayush","Nitu","Vinay"];
+console.log(studentlist);
+
+//for any data types
+
+let aayushInfo=["Aayush Sharma", 20 , false , null , "CSE",15];
+console.log(aayushInfo[1]);
+console.log(typeof(aayushInfo[2]));
+
+//to iterate array number
+for(let i=0; i<aayushInfo.length; i++){
+    console.log(aayushInfo[i]);
+}
+
+</script>
