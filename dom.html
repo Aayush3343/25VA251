@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom in JS</title>
+</head>
+<body>
+    
+<!-- The Document Object Model (DOM) is a programming interface for web documents that allows JavaScript to dynamically access, modify, and update the content, structure, and style of a webpage. It represents the entire webpage as a hierarchical, tree-like structure of objects, where each part of the document (elements, attributes, text) is a node. -->
+
+        <h2>Check your age to cast the Vote!</h2>
+        <form action="">
+            <input type="number" placeholder="Enter Your Age!" name="age" id="age"/>
+            <input type="submit" value="Submit" onclick="result()"/>
+
+        </form>
+
+<script>
+    function result(){
+        let myAge=document.getElementById("age").value;
+        if(myAge>=18){
+            alert("You are eligible to cast vote!");
+        }
+        else{
+            alert("You are not eligible to cast your vote!");
+        }
+    }
+    
+</script>
+
+    
+
+</body>
+</html>

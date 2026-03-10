@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Conditonal Statments in JS</title>
+  </head>
+
+  <body>
+    <script>
+        //In JavaScript, conditional statements control the flow of execution by allowing a program to make decisions and run specific blocks of code only if certain conditions are met. Instead of executing code sequentially (top to bottom), these statements enable the program to follow different paths based on whether a condition evaluates to true or false
+
+        // if..........
+        let age=20;
+        if(age<18){
+            console.log("Not eligible for vote casting");
+        }
+            console.log("eligible for vote casting");
+            let myAge=24;
+            if(myAge>=18){
+                console.log("You can do vote casting");
+            }else{
+                console.log("You cannot do vote casting");
+            }
+            
+           // The switch statement evaluates an expression once and then compares the result to the values specified in each case clause using strict equality (===). 
+           let grade=50;
+           switch(grade){
+            case 1: result="First Division";
+            break;
+              case 2: result="Second Division";
+            break;
+              case 3: result="Third Division";
+            break;
+              default: result="Fail";
+           }
+
+           // if else statement
+
+           let marks = 30;
+           if(marks<=33){
+            console.log("Third grade")
+           }
+           else if(marks>33 && marks< 60){
+            console.log("Grade Second")
+           }
+           else{
+            console.log("Grade First");
+           }
+        
+        
+    </script>
+
+  </body>
+  </html>
