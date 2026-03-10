@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Object in JS</title>
+  </head>
+
+  <body>
+    <script>
+      //object in JS : collection(pair) of keys(properties) and its value.
+
+      //create an object using literal way...
+
+      let student = {
+        name: "Aayush",
+        age: 20,
+        ismarried: false,
+        adress: {
+          streetno: 1,
+          area: "Pilkhuwa",
+          city: "Hapur",
+          pincode: 245304,
+        },
+        course: "B.Tech",
+        branch: "CSE",
+        year: 2025,
+        getinfo: function () {
+          return "My education detail is" + student.branch + " " + student.year;
+        },
+        subjects: ["Maths", "Hindi", "Science", "English"],
+        examDone: null,
+      };
+
+      //access object keys or properties
+      console.log(student.adress); // object
+      console.log(student.getinfo()); // function
+      console.log(student.subjects[2]); //  array
+      //console.log(typeof(student));
+
+      // find any key in your object
+      console.log("name" in student);
+      // delete any key from your object
+      console.log(delete student.name);
+      console.log(student);
+
+      // find length of object
+      let keysLength = Object.keys(student);
+      console.log(keysLength.length);
+
+      // iterrate object's key(properties) using
+      for (let i = 0; i < keysLength.length; i++) {
+        console.log(student[keysLength[i]]);
+      }
+
+      // iterrate object's key(properties) using for .. in loop
+      for (let x in student) {
+        console.log(student[x]);
+      }
+      // create an object using new keyword
+      let myInfo = new Object();
+      myInfo.name="Akki";
+      myInfo.age=20;
+      myInfo.city="Delhi";
+      myInfo.adress=null;
+      myInfo.mob=9968888400;
+
+      //accessing object keys using [] notation
+      console.log(myInfo["name"]);
+      console.log(myInfo["age"]);
+      console.log(myInfo["mob"]);
+
+    </script>
+  </body>
+</html>
