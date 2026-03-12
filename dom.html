@@ -8,25 +8,48 @@
 <body>
     
 <!-- The Document Object Model (DOM) is a programming interface for web documents that allows JavaScript to dynamically access, modify, and update the content, structure, and style of a webpage. It represents the entire webpage as a hierarchical, tree-like structure of objects, where each part of the document (elements, attributes, text) is a node. -->
-
+<!-- 
         <h2>Check your age to cast the Vote!</h2>
         <form action="">
             <input type="number" placeholder="Enter Your Age!" name="age" id="age"/>
             <input type="submit" value="Submit" onclick="result()"/>
 
-        </form>
+        </form> -->
+        <input type="text" placeholder="Enter Your Name" id="inputData"/>
+        <h2 id="text"></h2>
+        <button ondblclick="changecolor()">Click on me!</button>
+
+
 
 <script>
-    function result(){
-        let myAge=document.getElementById("age").value;
-        if(myAge>=18){
-            alert("You are eligible to cast vote!");
-        }
-        else{
-            alert("You are not eligible to cast your vote!");
-        }
-    }
-    
+    //    let myAge=document.getElementById("age").value;
+       // if(myAge>=18){
+      //      alert("You are eligible to cast vote!");
+     //   }
+     //   else{
+     //       alert("You are not eligible to cast your vote!");
+     //   }
+   // }
+
+   function changecolor(){
+    let inputValue=document.getElementById("inputData").value;
+
+    let inputText=document.getElementById("text");
+
+    inputText.innerHTML=inputValue;
+
+
+    inputText.style.color="red";
+    document.getElementById('text').textContent=inputValue;
+// random color
+inputText.style.color = '#' + Math.floor(Math.random()*16777215).toString(16);
+   }
+   // change
+   let para=document.getElementBytagName("p")[4];
+   function changeColor(){
+    para.style.color="#"+Math.floor(Math.random()*16777215).toString(16);
+   }
+     para.addEventListener("mouseover",changeColor);
 </script>
 
     
