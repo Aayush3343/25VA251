@@ -129,6 +129,54 @@
         }
       }
       productdetail();
+
+      // IIFE
+      (function () {
+        console.log("hello IIFE");
+      })();
+
+      //short code for above IIFE is
+      ((msg) => console.log(" IIFE"))();
+      //Local Storage : - JavaScript local storage is a feature that enables websites to store persistent, key-
+
+      let myInfo = {
+        name: "Aayush",
+        age: 20,
+        city: "Lucknow",
+        email: "aayush.sharma3343@gmail.com",
+        course: "BTECH",
+        Mobile: 9968888400,
+      };
+      // convert object into string\
+      let myInfoData=JSON.stringify(myInfo);
+
+      // set data
+      localStorage.setItem('preferences',myInfoData);
+
+      // get data
+      let myPreferences=localStorage.getItem('preferences');
+
+      //retrieve the data and convert into json object
+      let myInfoPre=JSON.parse(myPreferences);
+
+      //access keys
+      console.log(myInfoPre.Mobile);
+
+      // High Order Function : - 
+
+      let num = [2,45,7,8,9,0,3,5,46];
+      let result=num.map(n=>n*2);
+      console.log(result);
+      let sum=num.reduce((total,n)=>total+n);
+
+      //Filter
+      let sorting=num.filter(n=>n>3);
+      console.log(sorting);
+
+      // for each 
+    num.forEach(n=>console.log(n*n));
+    console.log(`updated array is : ${num}`);
+
     </script>
   </body>
 </html>
